@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+.nav {
+  font-family: 'Assistant', sans-serif;
+  min-height: 70px;
+  height: 12vh;
+  width: 100vw;
+}
+
+.list-links {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.link-container {
+  animation-name: slide-down;
+  animation-duration: 1s;
+  display: grid;
+}
+
+.link-container>button {
+  outline: none;
+  border: none;
+  background: none;
+  justify-self: center;
+  align-self: center;
+  font-family: 'Assistant', sans-serif;
+  font-size: 26px;
+  transition: font-size 200ms, color 300ms;
+}
+
+.link-container>button:hover {
+  color: #003aff;
+  font-size: 28px;
+  cursor: pointer;
+  transition: font-size 200ms, color 300ms;
+}
+
+#logo-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#logo {
+  align-self: center;
+  justify-self: center;
+  width: 42%;
+  min-width: 75px;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav {
+    margin: 0 auto 0 auto;
+    min-height: 50px;
+    height: 6vh;
+    width: 96vw;
+  }
+
+  .link-container>button {
+    font-size: 18px;
+  }
+
+  #logo {
+    min-width: 60px;
+  }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
+
+.content-container {
+  font-family: 'Assistant', sans-serif;
+  margin: 20px auto 20px auto;
+  width: 94vw;
+}
+
+.fieldset {
+  border: 1px #003aff solid;
+  border-radius: 5px;
+}
+
+.legenda {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+#nina {
+  font-size: 54px;
+  color: #de9d28;
+}
+
+.nina-review {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 10px;
+}
+
+.nina-img-container {
+  justify-self: center;
+  height: 450px;
+  margin-bottom: 20px;
+  width: 88%;
+}
+
+.nina-img-container>legend {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#nina-img {
+  transition: transform 200ms linear, box-shadow 200ms linear;
+  box-shadow: none;
+  transform: scale(1.0);
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+#nina-img:hover {
+  cursor: pointer;
+  transition: transform 200ms linear, box-shadow 200ms linear;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+}
+
+.nina-descricao {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+.nina-descricao>hr {
+  margin: 20px auto 20px auto;
+  width: 80%;
+  border-color: #003aff;
+}
+
+.nina-descricao-secao {
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+}
+
+.nina-descricao-secao>h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.nina-descricao-secao p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.nina-descricao-secao>ul {
+  font-size: 18px;
+  margin-left: 6%;
+}
+
+@media only screen and (max-width: 768px) {
+  .legenda {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+  }
+
+  #nina {
+    font-size: 50px;
+    color: #de9d28;
+  }
+
+  .nina-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nina-img-container {
+    height: 50%;
+    max-height: 400px;
+    width: 90%;
+  }
+
+  .nina-descricao {
+    margin: 50px auto 0 auto;
+  }
+
+  .nina-descricao-secao>ul {
+    margin-left: 40px;
+  }
+}
